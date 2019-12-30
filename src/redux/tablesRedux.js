@@ -1,19 +1,19 @@
-import Axios from 'axios';
-import { api } from '../settings';
+import Axios from "axios";
+import { api } from "../settings";
 
 /* selectors */
 export const getAll = ({ tables }) => tables.data;
 export const getLoadingState = ({ tables }) => tables.loading;
 
 /* action name creator */
-const reducerName = 'tables';
+const reducerName = "tables";
 const createActionName = name => `app/${reducerName}/${name}`;
 
 /* action types */
-const FETCH_START = createActionName('FETCH_START');
-const FETCH_SUCCESS = createActionName('FETCH_SUCCESS');
-const FETCH_ERROR = createActionName('FETCH_ERROR');
-const UPDATE_STATUS = createActionName('UPDATE_STATUS');
+const FETCH_START = createActionName("FETCH_START");
+const FETCH_SUCCESS = createActionName("FETCH_SUCCESS");
+const FETCH_ERROR = createActionName("FETCH_ERROR");
+const UPDATE_STATUS = createActionName("UPDATE_STATUS");
 
 /* action creators */
 export const fetchStarted = payload => ({ payload, type: FETCH_START });
@@ -40,10 +40,14 @@ export const updateTableStatus = (tableId, newStatus) => {
   console.log(tableId, newStatus);
   return (dispatch, getState) => {
     Axios.patch(`${api.url}/${api.tables}/${tableId}`, {
-      status: newStatus,
-    }).then(res => {
-      dispatch(updateStatus(res.data));
-    });
+      status: newStatus
+    })
+      .then(res => {
+        dispatch(updateStatus(res.data));
+      })
+      .then(res => {
+        dispatch(fetchFromAPI());
+      });
   };
 };
 
@@ -55,8 +59,8 @@ export default function reducer(statePart = [], action = {}) {
         ...statePart,
         loading: {
           active: true,
-          error: false,
-        },
+          error: false
+        }
       };
     }
     case FETCH_SUCCESS: {
@@ -64,9 +68,9 @@ export default function reducer(statePart = [], action = {}) {
         ...statePart,
         loading: {
           active: false,
-          error: false,
+          error: false
         },
-        data: action.payload,
+        data: action.payload
       };
     }
     case FETCH_ERROR: {
@@ -74,14 +78,14 @@ export default function reducer(statePart = [], action = {}) {
         ...statePart,
         loading: {
           active: false,
-          error: action.payload,
-        },
+          error: action.payload
+        }
       };
     }
     case UPDATE_STATUS: {
       return {
         ...statePart,
-        data: action.payload,
+        data: action.payload
       };
     }
     default:

@@ -1,23 +1,23 @@
-import React from "react";
-import PropTypes from "prop-types";
-import styles from "./Waiter.module.scss";
-import Table from "@material-ui/core/Table";
-import TableBody from "@material-ui/core/TableBody";
-import TableCell from "@material-ui/core/TableCell";
-import TableHead from "@material-ui/core/TableHead";
-import TableRow from "@material-ui/core/TableRow";
-import Paper from "@material-ui/core/Paper";
-import Button from "@material-ui/core/Button";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styles from './Waiter.module.scss';
+import Table from '@material-ui/core/Table';
+import TableBody from '@material-ui/core/TableBody';
+import TableCell from '@material-ui/core/TableCell';
+import TableHead from '@material-ui/core/TableHead';
+import TableRow from '@material-ui/core/TableRow';
+import Paper from '@material-ui/core/Paper';
+import Button from '@material-ui/core/Button';
 
 class Waiter extends React.Component {
   static propTypes = {
     fetchTables: PropTypes.func,
     loading: PropTypes.shape({
       active: PropTypes.bool,
-      error: PropTypes.oneOfType([PropTypes.bool, PropTypes.string])
+      error: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
     }),
     changeTableStatus: PropTypes.func,
-    tables: PropTypes.any
+    tables: PropTypes.any,
   };
 
   componentDidMount() {
@@ -26,18 +26,18 @@ class Waiter extends React.Component {
   }
 
   changeStatus(tableId, status) {
-    if (status === "free") {
-      status = "thinking";
-    } else if (status === "thinking") {
-      status = "ordered";
-    } else if (status === "ordered") {
-      status = "prepared";
-    } else if (status === "prepared") {
-      status = "delivered";
-    } else if (status === "delivered") {
-      status = "paid";
-    } else if (status === "paid") {
-      status = "free";
+    if (status === 'free') {
+      status = 'thinking';
+    } else if (status === 'thinking') {
+      status = 'ordered';
+    } else if (status === 'ordered') {
+      status = 'prepared';
+    } else if (status === 'prepared') {
+      status = 'delivered';
+    } else if (status === 'delivered') {
+      status = 'paid';
+    } else if (status === 'paid') {
+      status = 'free';
     }
     const { changeTableStatus } = this.props;
     changeTableStatus(tableId, status);
@@ -45,7 +45,7 @@ class Waiter extends React.Component {
 
   renderActions(status, tableId) {
     switch (status) {
-      case "free":
+      case 'free':
         return (
           <>
             <Button
@@ -58,7 +58,7 @@ class Waiter extends React.Component {
             <Button>new order</Button>
           </>
         );
-      case "thinking":
+      case 'thinking':
         return (
           <Button
             onClick={() => {
@@ -68,7 +68,7 @@ class Waiter extends React.Component {
             new order
           </Button>
         );
-      case "ordered":
+      case 'ordered':
         return (
           <Button
             onClick={() => {
@@ -78,7 +78,7 @@ class Waiter extends React.Component {
             prepared
           </Button>
         );
-      case "prepared":
+      case 'prepared':
         return (
           <Button
             onClick={() => {
@@ -88,7 +88,7 @@ class Waiter extends React.Component {
             delivered
           </Button>
         );
-      case "delivered":
+      case 'delivered':
         return (
           <Button
             onClick={() => {
@@ -98,7 +98,7 @@ class Waiter extends React.Component {
             paid
           </Button>
         );
-      case "paid":
+      case 'paid':
         return (
           <Button
             onClick={() => {
@@ -116,7 +116,7 @@ class Waiter extends React.Component {
   render() {
     const {
       loading: { active, error },
-      tables
+      tables,
     } = this.props;
 
     if (active || !tables.length) {
