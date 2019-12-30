@@ -1,7 +1,7 @@
-import React from "react";
-import styles from "./PageNav.module.scss";
-import { NavLink } from "react-router-dom";
-import Button from "@material-ui/core/Button";
+import React from 'react';
+import styles from './PageNav.module.scss';
+import { NavLink } from 'react-router-dom';
+import Button from '@material-ui/core/Button';
 
 const PageNav = () => (
   <nav className={styles.component}>

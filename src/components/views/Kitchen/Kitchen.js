@@ -1,94 +1,94 @@
-import React from "react";
-import styles from "./Kitchen.module.scss";
-import Table from "@material-ui/core/Table";
-import TableBody from "@material-ui/core/TableBody";
-import TableCell from "@material-ui/core/TableCell";
-import TableHead from "@material-ui/core/TableHead";
-import TableRow from "@material-ui/core/TableRow";
-import Paper from "@material-ui/core/Paper";
-import Checkbox from "@material-ui/core/Checkbox";
-import { green } from "@material-ui/core/colors";
-import { withStyles } from "@material-ui/core/styles";
-import Title from "../../common/Title/Title";
-import CssBaseline from "@material-ui/core/CssBaseline";
+import React from 'react';
+import styles from './Kitchen.module.scss';
+import Table from '@material-ui/core/Table';
+import TableBody from '@material-ui/core/TableBody';
+import TableCell from '@material-ui/core/TableCell';
+import TableHead from '@material-ui/core/TableHead';
+import TableRow from '@material-ui/core/TableRow';
+import Paper from '@material-ui/core/Paper';
+import Checkbox from '@material-ui/core/Checkbox';
+import { green } from '@material-ui/core/colors';
+import { withStyles } from '@material-ui/core/styles';
+import Title from '../../common/Title/Title';
+import CssBaseline from '@material-ui/core/CssBaseline';
 
 const GreenCheckbox = withStyles({
   root: {
     color: green[400],
-    "&$checked": {
-      color: green[600]
-    }
+    '&$checked': {
+      color: green[600],
+    },
   },
-  checked: {}
+  checked: {},
 })(props => <Checkbox color="default" {...props} />);
 
 const demoContent = [
   {
-    orderTime: "14:00",
-    id: "1",
+    orderTime: '14:00',
+    id: '1',
     order: 4567,
-    dishes: ["Greek Pizza", "California Pizza"]
+    dishes: ['Greek Pizza', 'California Pizza'],
   },
   {
-    orderTime: "14:00",
-    id: "2",
+    orderTime: '14:00',
+    id: '2',
     order: 5678,
-    dishes: ["Four Cheese", "Water"]
+    dishes: ['Four Cheese', 'Water'],
   },
   {
-    orderTime: "14:00",
-    id: "3",
+    orderTime: '14:00',
+    id: '3',
     order: 6789,
-    dishes: ["Bruschetta", "Spaghetti Bolognese", "Caffe Latte"]
+    dishes: ['Bruschetta', 'Spaghetti Bolognese', 'Caffe Latte'],
   },
   {
-    orderTime: "15:00",
-    id: "4",
+    orderTime: '15:00',
+    id: '4',
     order: 7891,
-    dishes: ["Black Label Burger", "Tea"]
+    dishes: ['Black Label Burger', 'Tea'],
   },
   {
-    orderTime: "16:00",
-    id: "2",
+    orderTime: '16:00',
+    id: '2',
     order: 8912,
-    dishes: ["Blackened Redfish", "Coffee"]
+    dishes: ['Blackened Redfish', 'Coffee'],
   },
   {
-    orderTime: "16:00",
-    id: "3",
+    orderTime: '16:00',
+    id: '3',
     order: 9123,
-    dishes: ["Breaded Pork Tenderloin", "Orange Juice"]
+    dishes: ['Breaded Pork Tenderloin', 'Orange Juice'],
   },
   {
-    orderTime: "16:00",
-    id: "4",
+    orderTime: '16:00',
+    id: '4',
     order: 12345,
-    dishes: ["Buffalo Wings", "Canlis Salad"]
+    dishes: ['Buffalo Wings', 'Canlis Salad'],
   },
   {
-    orderTime: "16:30",
-    id: "5",
+    orderTime: '16:30',
+    id: '5',
     order: 23456,
-    dishes: ["Carnitas Burrito", "Cheese Slice"]
+    dishes: ['Carnitas Burrito', 'Cheese Slice'],
   },
   {
-    orderTime: "18:00",
-    id: "3",
+    orderTime: '18:00',
+    id: '3',
     order: 1234,
-    dishes: ["Margherita", "Coke", "Apple Juice"]
+    dishes: ['Margherita', 'Coke', 'Apple Juice'],
   },
   {
-    orderTime: "21:30",
-    id: "4",
+    orderTime: '21:30',
+    id: '4',
     order: 2345,
-    dishes: ["New York-Style Pizza", "Pepsi"]
+    dishes: ['New York-Style Pizza', 'Pepsi'],
   },
   {
-    orderTime: "21:30",
-    id: "5",
+    orderTime: '21:30',
+    id: '5',
     order: 3456,
-    dishes: ["Sicilian Pizza", "Tonic"]
-  }
+    dishes: ['Sicilian Pizza', 'Tonic'],
+  },
 ];
 
 const Kitchen = () => (
@@ -122,7 +122,7 @@ const Kitchen = () => (
               <TableCell>
                 <GreenCheckbox
                   value="completed"
-                  inputProps={{ "aria-label": "completed" }}
+                  inputProps={{ 'aria-label': 'completed' }}
                 />
               </TableCell>
             </TableRow>

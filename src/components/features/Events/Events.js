@@ -1,12 +1,12 @@
-import React from "react";
-import Link from "@material-ui/core/Link";
-import { makeStyles } from "@material-ui/core/styles";
-import Table from "@material-ui/core/Table";
-import TableBody from "@material-ui/core/TableBody";
-import TableCell from "@material-ui/core/TableCell";
-import TableHead from "@material-ui/core/TableHead";
-import TableRow from "@material-ui/core/TableRow";
-import Title from "../../common/Title/Title";
+import React from 'react';
+import Link from '@material-ui/core/Link';
+import { makeStyles } from '@material-ui/core/styles';
+import Table from '@material-ui/core/Table';
+import TableBody from '@material-ui/core/TableBody';
+import TableCell from '@material-ui/core/TableCell';
+import TableHead from '@material-ui/core/TableHead';
+import TableRow from '@material-ui/core/TableRow';
+import Title from '../../common/Title/Title';
 
 // Generate Event Data
 function createData(
@@ -25,54 +25,54 @@ function createData(
 const rows = [
   createData(
     0,
-    "15 Mar, 2019",
-    "Ezmae Marshall",
-    "Fargo, ND",
-    "2",
-    "12:00",
-    "VISA ⠀•••• 2704",
+    '15 Mar, 2019',
+    'Ezmae Marshall',
+    'Fargo, ND',
+    '2',
+    '12:00',
+    'VISA ⠀•••• 2704',
     659.72
   ),
   createData(
     1,
-    "15 Mar, 2019",
-    "Eddie Benton",
-    "Grand Prairie, TX",
-    "3",
-    "12:00",
-    "MC ⠀•••• 5612",
+    '15 Mar, 2019',
+    'Eddie Benton',
+    'Grand Prairie, TX',
+    '3',
+    '12:00',
+    'MC ⠀•••• 5612',
     222.32
   ),
   createData(
     2,
-    "15 Mar, 2019",
-    "Rose Leonard",
-    "Huntsville, AL",
-    "4",
-    "14:30",
-    "AMEX ⠀•••• 4590",
+    '15 Mar, 2019',
+    'Rose Leonard',
+    'Huntsville, AL',
+    '4',
+    '14:30',
+    'AMEX ⠀•••• 4590',
     411.57
   ),
   createData(
     3,
-    "15 Mar, 2019",
-    "Joe Bowers",
-    "Murfreesboro, TN",
-    "5",
-    "14:30",
-    "VISA ⠀•••• 6723",
+    '15 Mar, 2019',
+    'Joe Bowers',
+    'Murfreesboro, TN',
+    '5',
+    '14:30',
+    'VISA ⠀•••• 6723',
     541.22
   ),
   createData(
     4,
-    "15 Mar, 2019",
-    "Dan Lynn",
-    "Boise, ID",
-    "1",
-    "19:30",
-    "VISA ⠀•••• 5678",
+    '15 Mar, 2019',
+    'Dan Lynn',
+    'Boise, ID',
+    '1',
+    '19:30',
+    'VISA ⠀•••• 5678',
     378.11
-  )
+  ),
 ];
 
 function preventDefault(event) {
@@ -81,8 +81,8 @@ function preventDefault(event) {
 
 const useStyles = makeStyles(theme => ({
   seeMore: {
-    marginTop: theme.spacing(3)
-  }
+    marginTop: theme.spacing(3),
+  },
 }));
 
 export default function Events() {

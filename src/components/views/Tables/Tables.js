@@ -1,13 +1,13 @@
-import React from "react";
-import styles from "./Tables.module.scss";
-import { Link } from "react-router-dom";
-import { Button } from "@material-ui/core";
-import Paper from "@material-ui/core/Paper";
-import Title from "../../common/Title/Title";
-import DTPicker from "../../features/DateTimePicker/DateTimePicker";
-import Box from "@material-ui/core/Box";
-import CssBaseline from "@material-ui/core/CssBaseline";
-import TableMap from "../../features/TableMap/TableMap";
+import React from 'react';
+import styles from './Tables.module.scss';
+import { Link } from 'react-router-dom';
+import { Button } from '@material-ui/core';
+import Paper from '@material-ui/core/Paper';
+import Title from '../../common/Title/Title';
+import DTPicker from '../../features/DateTimePicker/DateTimePicker';
+import Box from '@material-ui/core/Box';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import TableMap from '../../features/TableMap/TableMap';
 
 const Tables = () => {
   return (

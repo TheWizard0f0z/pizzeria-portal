@@ -1,22 +1,22 @@
-import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import Table from "@material-ui/core/Table";
-import TableBody from "@material-ui/core/TableBody";
-import TableCell from "@material-ui/core/TableCell";
-import TableContainer from "@material-ui/core/TableContainer";
-import TableHead from "@material-ui/core/TableHead";
-import TableRow from "@material-ui/core/TableRow";
-import Paper from "@material-ui/core/Paper";
-import Button from "@material-ui/core/Button";
-import InfoOutlinedIcon from "@material-ui/icons/InfoOutlined";
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import Table from '@material-ui/core/Table';
+import TableBody from '@material-ui/core/TableBody';
+import TableCell from '@material-ui/core/TableCell';
+import TableContainer from '@material-ui/core/TableContainer';
+import TableHead from '@material-ui/core/TableHead';
+import TableRow from '@material-ui/core/TableRow';
+import Paper from '@material-ui/core/Paper';
+import Button from '@material-ui/core/Button';
+import InfoOutlinedIcon from '@material-ui/icons/InfoOutlined';
 
 const useStyles = makeStyles({
   table: {
-    minWidth: 650
+    minWidth: 650,
   },
   container: {
-    marginTop: 32
-  }
+    marginTop: 32,
+  },
 });
 
 function createData(hour, table1, table2, table3, table4, table5, table6) {
@@ -24,47 +24,47 @@ function createData(hour, table1, table2, table3, table4, table5, table6) {
 }
 
 const rows = [
-  createData("12:00", null, null, null, null, null, null),
-  createData("12:30", null, null, null, null, null, null),
-  createData("13:00", null, null, null, null, null, null),
-  createData("13:00", null, null, null, null, null, null),
+  createData('12:00', null, null, null, null, null, null),
+  createData('12:30', null, null, null, null, null, null),
+  createData('13:00', null, null, null, null, null, null),
+  createData('13:30', null, null, null, null, null, null),
   createData(
-    "14:00",
-    "Michael Jackson",
-    "Bruce Springsteen",
-    "Dale Baldwin",
+    '14:00',
+    'Michael Jackson',
+    'Bruce Springsteen',
+    'Dale Baldwin',
     null,
     null,
     null
   ),
-  createData("14:30", null, null, null, null, null, null),
-  createData("15:00", null, null, null, "Kiana Rivers", null, null),
-  createData("15:30", null, null, null, null, null, null),
+  createData('14:30', null, null, null, null, null, null),
+  createData('15:00', null, null, null, 'Kiana Rivers', null, null),
+  createData('15:30', null, null, null, null, null, null),
   createData(
-    "16:00",
+    '16:00',
     null,
-    "Bluebell Durham",
-    "Sonnie Velasquez",
-    "Joel Fitzgerald",
+    'Bluebell Durham',
+    'Sonnie Velasquez',
+    'Joel Fitzgerald',
     null,
     null
   ),
-  createData("16:30", null, null, null, null, null, null),
-  createData("17:00", null, null, null, null, null, null),
-  createData("17:30", null, null, null, null, null, null),
-  createData("18:00", null, null, "Elvis Presley", null, null, null),
-  createData("18:30", null, null, null, null, null, null),
-  createData("19:00", null, null, null, null, null, null),
-  createData("19:30", null, null, null, null, null, null),
-  createData("20:00", null, null, null, null, null, null),
-  createData("20:30", null, null, null, null, null, null),
-  createData("21:00", null, null, null, null, null, null),
-  createData("21:30", null, null, null, "Paul McCartney", "Tom Scholz", null),
-  createData("22:00", null, null, null, null, null, null),
-  createData("22:30", null, null, null, null, null, null),
-  createData("23:00", null, null, null, null, null, null),
-  createData("23:30", null, null, null, null, null, null),
-  createData("00:00", null, null, null, null, null, null)
+  createData('16:30', null, null, null, null, null, null),
+  createData('17:00', null, null, null, null, null, null),
+  createData('17:30', null, null, null, null, null, null),
+  createData('18:00', null, null, 'Elvis Presley', null, null, null),
+  createData('18:30', null, null, null, null, null, null),
+  createData('19:00', null, null, null, null, null, null),
+  createData('19:30', null, null, null, null, null, null),
+  createData('20:00', null, null, null, null, null, null),
+  createData('20:30', null, null, null, null, null, null),
+  createData('21:00', null, null, null, null, null, null),
+  createData('21:30', null, null, null, 'Paul McCartney', 'Tom Scholz', null),
+  createData('22:00', null, null, null, null, null, null),
+  createData('22:30', null, null, null, null, null, null),
+  createData('23:00', null, null, null, null, null, null),
+  createData('23:30', null, null, null, null, null, null),
+  createData('00:00', null, null, null, null, null, null),
 ];
 
 export default function TableMap() {

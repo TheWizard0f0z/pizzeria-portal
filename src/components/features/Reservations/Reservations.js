@@ -1,12 +1,12 @@
-import React from "react";
-import Link from "@material-ui/core/Link";
-import { makeStyles } from "@material-ui/core/styles";
-import Table from "@material-ui/core/Table";
-import TableBody from "@material-ui/core/TableBody";
-import TableCell from "@material-ui/core/TableCell";
-import TableHead from "@material-ui/core/TableHead";
-import TableRow from "@material-ui/core/TableRow";
-import Title from "../../common/Title/Title";
+import React from 'react';
+import Link from '@material-ui/core/Link';
+import { makeStyles } from '@material-ui/core/styles';
+import Table from '@material-ui/core/Table';
+import TableBody from '@material-ui/core/TableBody';
+import TableCell from '@material-ui/core/TableCell';
+import TableHead from '@material-ui/core/TableHead';
+import TableRow from '@material-ui/core/TableRow';
+import Title from '../../common/Title/Title';
 
 // Generate Order Data
 function createData(
@@ -25,114 +25,114 @@ function createData(
 const rows = [
   createData(
     0,
-    "15 Mar, 2019",
-    "Michael Jackson",
-    "Gary, IN",
-    "1",
-    "14:00",
-    "AMEX ⠀•••• 2000",
+    '15 Mar, 2019',
+    'Michael Jackson',
+    'Gary, IN',
+    '1',
+    '14:00',
+    'AMEX ⠀•••• 2000',
     654.39
   ),
   createData(
     1,
-    "15 Mar, 2019",
-    "Bruce Springsteen",
-    "Long Branch, NJ",
-    "2",
-    "14:00",
-    "VISA ⠀•••• 5919",
+    '15 Mar, 2019',
+    'Bruce Springsteen',
+    'Long Branch, NJ',
+    '2',
+    '14:00',
+    'VISA ⠀•••• 5919',
     212.79
   ),
   createData(
     2,
-    "15 Mar, 2019",
-    "Dale Baldwin",
-    "Green Bay, WI",
-    "3",
-    "14:00",
-    "MC ⠀•••• 3349",
+    '15 Mar, 2019',
+    'Dale Baldwin',
+    'Green Bay, WI',
+    '3',
+    '14:00',
+    'MC ⠀•••• 3349',
     412.22
   ),
   createData(
     3,
-    "15 Mar, 2019",
-    "Kiana Rivers",
-    "Denver, CO",
-    "4",
-    "15:00",
-    "VISA ⠀•••• 5919",
+    '15 Mar, 2019',
+    'Kiana Rivers',
+    'Denver, CO',
+    '4',
+    '15:00',
+    'VISA ⠀•••• 5919',
     156.39
   ),
   createData(
     4,
-    "15 Mar, 2019",
-    "Bluebell Durham",
-    "Alexandria, VA",
-    "2",
-    "16:00",
-    "AMEX ⠀•••• 2210",
+    '15 Mar, 2019',
+    'Bluebell Durham',
+    'Alexandria, VA',
+    '2',
+    '16:00',
+    'AMEX ⠀•••• 2210',
     600.02
   ),
   createData(
     5,
-    "15 Mar, 2019",
-    "Sonnie Velasquez",
-    "San Jose, CA",
-    "3",
-    "16:00",
-    "MC ⠀•••• 4836",
+    '15 Mar, 2019',
+    'Sonnie Velasquez',
+    'San Jose, CA',
+    '3',
+    '16:00',
+    'MC ⠀•••• 4836',
     345.72
   ),
   createData(
     6,
-    "15 Mar, 2019",
-    "Joel Fitzgerald",
-    "Henderson, NV",
-    "4",
-    "16:00",
-    "VISA ⠀•••• 5919",
+    '15 Mar, 2019',
+    'Joel Fitzgerald',
+    'Henderson, NV',
+    '4',
+    '16:00',
+    'VISA ⠀•••• 5919',
     201.44
   ),
   createData(
     7,
-    "15 Mar, 2019",
-    "Theodore Acosta",
-    "Filadelfia, PA",
-    "5",
-    "16:30",
-    "MC ⠀•••• 5789",
+    '15 Mar, 2019',
+    'Theodore Acosta',
+    'Filadelfia, PA',
+    '5',
+    '16:30',
+    'MC ⠀•••• 5789',
     451.73
   ),
   createData(
     8,
-    "15 Mar, 2019",
-    "Elvis Presley",
-    "Tupelo, MS",
-    "3",
-    "18:00",
-    "VISA ⠀•••• 3719",
+    '15 Mar, 2019',
+    'Elvis Presley',
+    'Tupelo, MS',
+    '3',
+    '18:00',
+    'VISA ⠀•••• 3719',
     312.44
   ),
   createData(
     9,
-    "15 Mar, 2019",
-    "Paul McCartney",
-    "London, UK",
-    "4",
-    "21:30",
-    "VISA ⠀•••• 2574",
+    '15 Mar, 2019',
+    'Paul McCartney',
+    'London, UK',
+    '4',
+    '21:30',
+    'VISA ⠀•••• 2574',
     866.99
   ),
   createData(
     10,
-    "15 Mar, 2019",
-    "Tom Scholz",
-    "Boston, MA",
-    "5",
-    "21:30",
-    "MC ⠀•••• 1253",
+    '15 Mar, 2019',
+    'Tom Scholz',
+    'Boston, MA',
+    '5',
+    '21:30',
+    'MC ⠀•••• 1253',
     100.81
-  )
+  ),
 ];
 
 function preventDefault(event) {
@@ -141,8 +141,8 @@ function preventDefault(event) {
 
 const useStyles = makeStyles(theme => ({
   seeMore: {
-    marginTop: theme.spacing(3)
-  }
+    marginTop: theme.spacing(3),
+  },
 }));
 
 export default function Reservations() {

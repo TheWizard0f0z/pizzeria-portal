@@ -1,26 +1,26 @@
-import React from "react";
-import styles from "./WaiterOrderNew.module.scss";
-import Subtitle from "../../common/Subtitle/Subtitle";
-import Title from "../../common/Title/Title";
-import Paper from "@material-ui/core/Paper";
-import Table from "@material-ui/core/Table";
-import TableBody from "@material-ui/core/TableBody";
-import TableCell from "@material-ui/core/TableCell";
-import TableHead from "@material-ui/core/TableHead";
-import TableRow from "@material-ui/core/TableRow";
-import Button from "@material-ui/core/Button";
-import CssBaseline from "@material-ui/core/CssBaseline";
+import React from 'react';
+import styles from './WaiterOrderNew.module.scss';
+import Subtitle from '../../common/Subtitle/Subtitle';
+import Title from '../../common/Title/Title';
+import Paper from '@material-ui/core/Paper';
+import Table from '@material-ui/core/Table';
+import TableBody from '@material-ui/core/TableBody';
+import TableCell from '@material-ui/core/TableCell';
+import TableHead from '@material-ui/core/TableHead';
+import TableRow from '@material-ui/core/TableRow';
+import Button from '@material-ui/core/Button';
+import CssBaseline from '@material-ui/core/CssBaseline';
 
 function createData(details, products) {
   return { details, products };
 }
 
 const rows = [
-  createData("Table No.", null),
-  createData("Menu Products", null),
-  createData("Options", null),
-  createData("Subtotal", null),
-  createData("Total Price", null)
+  createData('Table No.', null),
+  createData('Menu Products', null),
+  createData('Options', null),
+  createData('Subtotal', null),
+  createData('Total Price', null),
 ];
 
 const WaiterOrderNew = () => (

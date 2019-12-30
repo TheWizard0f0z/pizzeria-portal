@@ -1,5 +1,5 @@
-import React from "react";
-import TextField from "@material-ui/core/TextField";
+import React from 'react';
+import TextField from '@material-ui/core/TextField';
 
 export default function BasicNumberFields() {
   return (
@@ -9,7 +9,7 @@ export default function BasicNumberFields() {
         placeholder="Number"
         type="number"
         InputLabelProps={{
-          shrink: true
+          shrink: true,
         }}
       />
     </form>

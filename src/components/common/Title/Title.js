@@ -1,7 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
-import styles from "./Title.module.scss";
-import Typography from "@material-ui/core/Typography";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styles from './Title.module.scss';
+import Typography from '@material-ui/core/Typography';
 
 export default function Title(props) {
   return (
@@ -17,5 +17,5 @@ export default function Title(props) {
 }
 
 Title.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node,
 };

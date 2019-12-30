@@ -1,13 +1,12 @@
 {
-  "product": [{
+  "product": [
+    {
       "id": "cake",
       "class": "small",
       "name": "Zio Stefano's Doughnut",
       "price": 9,
       "description": "Treat yourself with this soft, freshly baked cookie. The recipe has been handed down from generation to generation in our family and it has won us several first place prizes in local competitions.",
-      "images": [
-        "<img class=\"active\" src=\"images/doughnut.svg\">"
-      ]
+      "images": ["<img class=\"active\" src=\"images/doughnut.svg\">"]
     },
     {
       "id": "breakfast",
@@ -15,9 +14,7 @@
       "name": "Zia Giulia's Breakfast",
       "price": 9,
       "description": "There's no better way to start your day than indulging yourself with a cup of fresh Italian coffee and crispy waffels. Made just for you on the spot, this breakfast combo has been our guests' favorite for over 50 years.",
-      "images": [
-        "<img class=\"active\" src=\"images/breakfast.svg\">"
-      ],
+      "images": ["<img class=\"active\" src=\"images/breakfast.svg\">"],
       "params": {
         "coffee": {
           "label": "Coffee type",
@@ -217,7 +214,8 @@
     }
   ],
   "order": [],
-  "event": [{
+  "event": [
+    {
       "id": 1,
       "date": "2019-09-16",
       "hour": "12:30",
@@ -268,13 +266,23 @@
       "starters": ["lemonWater"]
     }
   ],
-  "booking": [{
-    "id": 1,
-    "date": "2019-09-22",
-    "hour": "22:00",
-    "table": 1,
-    "duration": 1,
-    "ppl": 3,
-    "starters": ["bread", "lemonWater"]
-  }]
+  "booking": [
+    {
+      "id": 1,
+      "date": "2019-09-22",
+      "hour": "22:00",
+      "table": 1,
+      "duration": 1,
+      "ppl": 3,
+      "starters": ["bread", "lemonWater"]
+    }
+  ],
+  "tables": [
+    { "id": 1, "status": "free", "order": null },
+    { "id": 2, "status": "thinking", "order": null },
+    { "id": 3, "status": "ordered", "order": 123 },
+    { "id": 4, "status": "prepared", "order": 234 },
+    { "id": 5, "status": "delivered", "order": 345 },
+    { "id": 6, "status": "paid", "order": 456 }
+  ]
 }
